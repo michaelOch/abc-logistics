@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --theme-primary: #0888C0;
+    --theme-secondary: #ff5d01;
+    --theme-light: #ffffff;
+}
+
+.btn-primary {
+    background-color: var(--theme-primary);
+    border: 3px solid var(--theme-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--theme-light);
+    color: var(--theme-primary);
+    border: 3px solid var(--theme-primary);
+}
+
+.btn-secondary {
+    background-color: var(--theme-secondary);
+    border: 3px solid var(--theme-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--theme-light);
+    color: var(--theme-secondary);
+    border: 3px solid var(--theme-secondary);
+}
