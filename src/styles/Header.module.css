@@ -1,13 +1,12 @@
 .section {
     height: 100vh;
-    background-image: url(../assets/images/bg-1.jpg);
-    background-position: center;
+    background-image: url(../assets/images/bg-2.webp);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    /* color: #ffffff; */
-}
-
-.section_top {
+    background-blend-mode: overlay;
+    background-color: rgba(34, 32, 32, 0.6);
+    background-attachment: fixed;
     color: var(--theme-light);
 }
 
@@ -15,12 +14,12 @@
     cursor: pointer;
 }
 
-.section_bottom {
-    max-width: 1200px;
-    height: 80%;
+.section_content {
+    max-width: 1000px;
+    height: 90%;
     color: var(--theme-light);
 }
 
-.section_bottom h1 {
-    font-size: 72px;
+.section_content h1 {
+    font-size: 65px;
 }
