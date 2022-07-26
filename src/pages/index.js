@@ -1,8 +1,13 @@
 import Header from '@/components/header';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import about from '../assets/images/about.webp';
+import aboutImg from '../assets/images/about.webp';
+import customer1 from '../assets/images/customer-1.webp';
+import customer2 from '../assets/images/customer-2.webp';
+import customer3 from '../assets/images/customer-3.webp';
+import customer4 from '../assets/images/customer-4.webp';
 
 export default function Home() {
     return (
@@ -32,7 +37,7 @@ export default function Home() {
                             </div>
                             <div className='col-md-5 offset-md-1'>
                                 <div className=''>
-                                    <Image src={about} alt='about' />
+                                    <Image src={aboutImg} alt='about' />
                                 </div>
                             </div>
                         </div>
@@ -80,6 +85,109 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Testimonials */}
+                <section className={styles.testimonial_section}>
+                    <div className='container'>
+                        <h2 className='text-center'>TESTIMONIALS</h2>
+                        <div className={`${styles.line} mx-auto mb-4`}></div>
+                        <div className=''>
+                            <div id='testimonialCarousel' className='carousel slide'>
+                                <div className='carousel-inner'>
+                                    <div className='carousel-item active'>
+                                        <div className={`${styles.testimonial_content} d-flex flex-column justify-content-center align-items-center mx-auto`}>
+                                            <div className={`${styles.customer_avatar} mx-auto mb-4`}>
+                                                <Image src={customer1} alt='customer avatar' />
+                                            </div>
+                                            <p className='text-center'>
+                                                1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                            </p>
+                                            <small className=''>- Jon Doe</small>
+                                        </div>
+                                    </div>
+                                    <div className='carousel-item'>
+                                        <div className={`${styles.testimonial_content} d-flex flex-column justify-content-center align-items-center mx-auto`}>
+                                            <div className={`${styles.customer_avatar} mx-auto mb-4`}>
+                                                <Image src={customer2} alt='customer avatar' />
+                                            </div>
+                                            <p className='text-center'>
+                                                2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                            </p>
+                                            <small className=''>- Mark Hilton</small>
+                                        </div>
+                                    </div>
+                                    <div className='carousel-item'>
+                                        <div className={`${styles.testimonial_content} d-flex flex-column justify-content-center align-items-center mx-auto`}>
+                                            <div className={`${styles.customer_avatar} mx-auto mb-4`}>
+                                                <Image src={customer3} alt='customer avatar' />
+                                            </div>
+                                            <p className='text-center'>
+                                                3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                            </p>
+                                            <small className=''>- Janet Shan</small>
+                                        </div>
+                                    </div>
+                                    <div className='carousel-item'>
+                                        <div className={`${styles.testimonial_content} d-flex flex-column justify-content-center align-items-center mx-auto`}>
+                                            <div className={`${styles.customer_avatar} mx-auto mb-4`}>
+                                                <Image src={customer4} alt='customer avatar' />
+                                            </div>
+                                            <p className='text-center'>
+                                                4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                            </p>
+                                            <small className=''>- Tommy Jakes</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type='button' className='carousel-control-prev' data-bs-target='#testimonialCarousel' data-bs-slide='prev'>
+                                    <span className='carousel-control-prev-icon bg-secondary' aria-hidden='true'></span>
+                                    <span className='visually-hidden'>Previous</span>
+                                </button>
+                                <button type='button' className='carousel-control-next' data-bs-target='#testimonialCarousel' data-bs-slide='next'>
+                                    <span className='carousel-control-next-icon bg-secondary' aria-hidden='true'></span>
+                                    <span className='visually-hidden'>Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Why people choose us */}
+                <section className={styles.why_section}>
+                    <div className='container'>
+                        <h2 className='text-center'>WHY PEOPLE CHOOSE US</h2>
+                        <div className={`${styles.line} mx-auto mb-4`}></div>
+                        <div className='row'>
+                            <div className='col-md-4'>
+                                <div className='card card-body'>
+                                    <h4 className='text-center mb-4'>Affordable</h4>
+                                    <p className='text-center'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='col-md-4'>
+                                <div className='card card-body'>
+                                    <h4 className='text-center mb-4'>Timely</h4>
+                                    <p className='text-center'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='col-md-4'>
+                                <div className='card card-body'>
+                                    <h4 className='text-center mb-4'>Reliable</h4>
+                                    <p className='text-center'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Link href='#'>
+                                <a className='btn btn-lg btn-block btn-primary mt-5'>Order a Delivery</a>
+                            </Link>
                         </div>
                     </div>
                 </section>

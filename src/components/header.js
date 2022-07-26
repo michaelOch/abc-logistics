@@ -13,7 +13,9 @@ function Header() {
             <div className={`d-flex flex-column justify-content-center align-items-center p-5 mx-auto ${styles.section_content}`}>
                 <h5 className='text-center'>WELCOME TO DELIS</h5>
                 <h1 className='text-center'>We Provide Best Courier and Parcel Services</h1>
-                <a href='/contact' className='btn btn-lg btn-block btn-primary mt-5'>Request Delivery</a>
+                <Link href='#'>
+                    <a className='btn btn-lg btn-block btn-primary mt-5'>Request Delivery</a>
+                </Link>
             </div>
         </header>
     )
