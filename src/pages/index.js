@@ -8,6 +8,9 @@ import customer1 from '../assets/images/customer-1.webp';
 import customer2 from '../assets/images/customer-2.webp';
 import customer3 from '../assets/images/customer-3.webp';
 import customer4 from '../assets/images/customer-4.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagram, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
     return (
@@ -94,7 +97,7 @@ export default function Home() {
                         <h2 className='text-center'>TESTIMONIALS</h2>
                         <div className={`${styles.line} mx-auto mb-4`}></div>
                         <div className=''>
-                            <div id='testimonialCarousel' className='carousel slide'>
+                            <div id='testimonialCarousel' className='carousel slide' data-bs-ride='carousel'>
                                 <div className='carousel-inner'>
                                     <div className='carousel-item active'>
                                         <div className={`${styles.testimonial_content} d-flex flex-column justify-content-center align-items-center mx-auto`}>
@@ -160,7 +163,7 @@ export default function Home() {
                         <div className={`${styles.line} mx-auto mb-4`}></div>
                         <div className='row'>
                             <div className='col-md-4'>
-                                <div className='card card-body'>
+                                <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Affordable</h4>
                                     <p className='text-center'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
@@ -168,7 +171,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='col-md-4'>
-                                <div className='card card-body'>
+                                <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Timely</h4>
                                     <p className='text-center'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
@@ -176,7 +179,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='col-md-4'>
-                                <div className='card card-body'>
+                                <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Reliable</h4>
                                     <p className='text-center'>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.
@@ -184,13 +187,134 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='d-flex justify-content-center align-items-center'>
+                        {/* <div className='d-flex justify-content-center align-items-center'>
                             <Link href='#'>
                                 <a className='btn btn-lg btn-block btn-primary mt-5'>Order a Delivery</a>
                             </Link>
+                        </div> */}
+                    </div>
+                </section>
+                {/* Become a partner */}
+                <section className={styles.partner_section}>
+                    <div className='container'>
+                        <div className={styles.partner_content}>
+                            <div className='row'>
+                                <div className='col-md-5'>
+                                    <div className='p-5'>
+                                        <h4 className=''>Have something to deliver?</h4>
+                                        <h2 className=''>Deliver Today</h2>
+                                        <div className='d-flex justify-content-start align-items-center'>
+                                            <Link href='#'>
+                                                <a className='btn btn-lg btn-block btn-primary mt-5'>Order a Delivery</a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-md-1'>
+                                    <div className={`${styles.bar} mx-auto`}></div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div className='p-5'>
+                                        <h4 className=''>Sign up today. Start delivering items.</h4>
+                                        <h2 className=''>For Riders and Car Owners</h2>
+                                        <div className='d-flex justify-content-start align-items-center'>
+                                            <Link href='#'>
+                                                <a className='btn btn-lg btn-block btn-primary mt-5'>Sign Up</a>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+                {/* Footer section */}
+                <footer className={styles.footer_section}>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-md-5'>
+                                <div className=''>
+                                    <h6 className='mb-3'>About Us</h6>
+                                    <p className=''>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure deserunt ut architecto dolores quo beatae laborum aliquam ipsam rem impedit obcaecati ea consequatur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='col-md-2'>
+                                <div className=''>
+                                    <h6 className='mb-3'>Quick Links</h6>
+                                    <div className=''>
+                                        <p className='mb-1'>
+                                            <Link href='#about-section'>
+                                                <a className=''>About Us</a>
+                                            </Link>
+                                        </p>
+                                        <p className='mb-1'>
+                                            <Link href='#request-section'>
+                                                <a className=''>Request Delivery</a>
+                                            </Link>
+                                        </p>
+                                        <p className='mb-1'>
+                                            <Link href='#partner-section'>
+                                                <a className=''>Become a Partner</a>
+                                            </Link>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-md-2'>
+                                <div className=''>
+                                    <h6 className='mb-3'>Follow Us</h6>
+                                    <div className='d-flex justify-content-between'>
+                                        <p className='mb-0'>
+                                            <Link href='#'>
+                                                <a className=''>
+                                                    <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
+                                                </a>
+                                            </Link>
+                                        </p>
+                                        <p className='mb-0'>
+                                            <Link href='#'>
+                                                <a className=''>
+                                                    <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
+                                                </a>
+                                            </Link>
+                                        </p>
+                                        <p className='mb-0'>
+                                            <Link href='#'>
+                                                <a className=''>
+                                                    <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+                                                </a>
+                                            </Link>
+                                        </p>
+                                        <p className='mb-0'>
+                                            <Link href='#'>
+                                                <a className=''>
+                                                    <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+                                                </a>
+                                            </Link>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-md-3'>
+                                <div className=''>
+                                    <h6 className='mb-3'>Subscribe Newsletter</h6>
+                                    <div className='input-group'>
+                                        <input type='email' className={`form-control ${styles.email}`}placeholder='Enter Email' />
+                                        <span className={`input-group-text ${styles.email_send}`}>
+                                            <Link href='#'>
+                                                <a className=''>SEND</a>
+                                            </Link>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr className={`text-light ${styles.footer_hr}`} />
+                        <p className='mb-0 text-center'>Copyright &copy;2022 | All rights reserved</p>
+                    </div>
+                </footer>
             </main>
         </div>
     )

@@ -1,9 +1,6 @@
 import React from 'react';
 import Navbar from '@/components/navbar';
 import styles from '../styles/Header.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faInstagram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 
 function Header() {

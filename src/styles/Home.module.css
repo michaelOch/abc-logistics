@@ -12,6 +12,10 @@
     border-radius: 100%;
 }
 
+.transparent {
+    background-color: transparent;
+}
+
 /* About */
 .about_section {
     padding: 80px 0px;
@@ -72,9 +76,75 @@
 
 /* Why people choose us */
 .why_section {
-    padding: 80px 0;
+    padding: 80px 0 140px 0;
+    /* background-image: url(../assets/images/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #c4afa3; */
+    background-color: var(--theme-primary);
 }
 
 .why_section h2 {
-    color: var(--theme-primary);
+    color: var(--theme-light);
+}
+
+/* Become a partner */
+.partner_section {
+    padding: 0 0 40px 0;
+    background-image: url(../assets/images/bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.partner_content {
+    background-color: var(--theme-light);
+    padding: 50px 0;
+    position: relative;
+    top: -60px;
+}
+
+.bar {
+    width: 10px;
+    height: 100%;
+    background-color: rgba(241, 241, 241, 0.7);
+}
+
+/* Footer Section */
+.footer_section {
+    padding: 80px 0;
+    background-color: #333;
+}
+
+.footer_section h6 {
+    color: var(--theme-light);
+}
+
+.footer_section p {
+    color: #737373;
+}
+
+.footer_section hr {
+    margin: 80px 0 40px 0;
+}
+
+.email {
+    background-color: transparent;
+}
+
+.email:focus {
+    background-color: transparent;
+}
+
+.email_send {
+    background: var(--theme-primary);
+    color: var(--theme-light);
+}
+
+.email_send a:hover {
+    color: var(--theme-light);
 }
