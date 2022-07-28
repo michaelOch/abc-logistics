@@ -16,7 +16,7 @@
 
 .section_content {
     max-width: 1000px;
-    height: 90%;
+    height: 100vh;
     color: var(--theme-light);
 }
 

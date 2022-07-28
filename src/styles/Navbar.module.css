@@ -1,5 +1,9 @@
 .section {
-    /* background-color: var(--theme-secondary); */
+    /* background-color: var(--theme-primary); */
     color: var(--theme-light);
     font-size: 18px;
+}
+
+.theme_primary {
+    background-color: var(--theme-primary);
 }

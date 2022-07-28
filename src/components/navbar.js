@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
 
-function Navbar() {
+function Navbar({ changeTheme }) {
     return (
-        <nav className={`navbar navbar-expand-lg px-3 py-4 sticky-top ${styles.section}`}>
+        <nav className={`navbar navbar-expand-lg px-3 py-4 fixed-top ${styles.section} ${changeTheme && styles.theme_primary}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" href="/"><h4 className='mb-0'>DELIS</h4></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

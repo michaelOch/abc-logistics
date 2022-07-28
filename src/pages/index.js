@@ -9,8 +9,8 @@ import customer2 from '../assets/images/customer-2.webp';
 import customer3 from '../assets/images/customer-3.webp';
 import customer4 from '../assets/images/customer-4.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faInstagram, faFacebook, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faPhoneAlt, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
     return (
@@ -20,6 +20,7 @@ export default function Home() {
                 <meta name="description" content="ABC Delivery" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <div id='home-section'></div>
             <Header />
             <main className=''>
                 {/* About Section */}
@@ -47,7 +48,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* How It Works */}
-                <section id='works-section' className={styles.works_section}>
+                <section id='request-section' className={styles.works_section}>
                     <div className='container'>
                         <h2 className='text-center'>HOW IT WORKS</h2>
                         <div className={`${styles.line} mx-auto mb-4`}></div>
@@ -88,6 +89,11 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Link href='#'>
+                                <a className='btn btn-lg btn-block btn-primary mt-5'>Order a Delivery</a>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -195,7 +201,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Become a partner */}
-                <section className={styles.partner_section}>
+                <section id='partner-section' className={styles.partner_section}>
                     <div className='container'>
                         <div className={styles.partner_content}>
                             <div className='row'>
@@ -229,7 +235,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* Footer section */}
-                <footer className={styles.footer_section}>
+                <footer id='contact-section' className={styles.footer_section}>
                     <div className='container'>
                         <div className='row'>
                             <div className='col-md-5'>
@@ -264,7 +270,7 @@ export default function Home() {
                             </div>
                             <div className='col-md-2'>
                                 <div className=''>
-                                    <h6 className='mb-3'>Follow Us</h6>
+                                    <h6 className='mb-3'>Contact Us</h6>
                                     <div className='d-flex justify-content-between'>
                                         <p className='mb-0'>
                                             <Link href='#'>
@@ -293,6 +299,20 @@ export default function Home() {
                                                     <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
                                                 </a>
                                             </Link>
+                                        </p>
+                                    </div>
+                                    <div className='mt-1'>
+                                        <p className='mb-1'>
+                                            <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+                                            &nbsp; info@delis.com
+                                        </p>
+                                        <p className='mb-1'>
+                                            <FontAwesomeIcon icon={faPhoneAlt} className={styles.icon} />
+                                            &nbsp; +49 0800 7500
+                                        </p>
+                                        <p className='mb-1'>
+                                            <FontAwesomeIcon icon={faLocationPin} className={styles.icon} />
+                                            &nbsp; 15 Saxton, Texas USA.
                                         </p>
                                     </div>
                                 </div>

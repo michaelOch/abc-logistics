@@ -93,7 +93,7 @@
 
 /* Become a partner */
 .partner_section {
-    padding: 0 0 40px 0;
+    padding: 80px 0;
     background-image: url(../assets/images/bg-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -104,8 +104,8 @@
 .partner_content {
     background-color: var(--theme-light);
     padding: 50px 0;
-    position: relative;
-    top: -60px;
+    /* position: relative;
+    top: -60px; */
 }
 
 .bar {
