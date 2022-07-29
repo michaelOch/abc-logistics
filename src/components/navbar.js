@@ -1,18 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar({ changeTheme }) {
     return (
-        <nav className={`navbar navbar-expand-lg px-3 py-4 fixed-top ${styles.section} ${changeTheme && styles.theme_primary}`}>
+        <nav className={`navbar navbar-expand-lg px-3 fixed-top ${styles.section} ${changeTheme && styles.theme_primary}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" href="/"><h4 className='mb-0'>DELIS</h4></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span className="navbar-toggler-icon"></span>
+                    {/* <span className="navbar-toggler-icon"></span> */}
+                    <FontAwesomeIcon icon={faBars} color='#ffffff' />
                 </button>
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">DELIS</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">

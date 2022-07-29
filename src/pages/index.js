@@ -27,7 +27,7 @@ export default function Home() {
                 <section id='about-section' className={`${styles.about_section}`}>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-md-6'>
+                            <div className='col-md-6 mt-2'>
                                 <div className=''>
                                     <h2 className=''>ABOUT US</h2>
                                     <div className={`${styles.line} mb-4`}></div>
@@ -39,7 +39,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-5 offset-md-1'>
+                            <div className='col-md-5 offset-md-1 mt-2'>
                                 <div className=''>
                                     <Image src={aboutImg} alt='about' />
                                 </div>
@@ -53,7 +53,7 @@ export default function Home() {
                         <h2 className='text-center'>HOW IT WORKS</h2>
                         <div className={`${styles.line} mx-auto mb-4`}></div>
                         <div className='row'>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className=''>
                                     <div className={`${styles.wheel_icon} d-flex justify-content-center align-items-center my-4`}>1</div>
                                     <h5 className='mb-4'>Make An Order</h5>
@@ -65,7 +65,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className=''>
                                     <div className={`${styles.wheel_icon} d-flex justify-content-center align-items-center my-4`}>2</div>
                                     <h5 className='mb-4'>Make A Payment</h5>
@@ -77,7 +77,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className=''>
                                     <div className={`${styles.wheel_icon} d-flex justify-content-center align-items-center my-4`}>3</div>
                                     <h5 className='mb-4'>Track Your Order</h5>
@@ -168,7 +168,7 @@ export default function Home() {
                         <h2 className='text-center'>WHY PEOPLE CHOOSE US</h2>
                         <div className={`${styles.line} mx-auto mb-4`}></div>
                         <div className='row'>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Affordable</h4>
                                     <p className='text-center'>
@@ -176,7 +176,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Timely</h4>
                                     <p className='text-center'>
@@ -184,7 +184,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 mt-2'>
                                 <div className={`card card-body text-light border-light ${styles.transparent}`}>
                                     <h4 className='text-center mb-4'>Reliable</h4>
                                     <p className='text-center'>
@@ -205,7 +205,7 @@ export default function Home() {
                     <div className='container'>
                         <div className={styles.partner_content}>
                             <div className='row'>
-                                <div className='col-md-5'>
+                                <div className='col-md-5 mt-2'>
                                     <div className='p-5'>
                                         <h4 className=''>Have something to deliver?</h4>
                                         <h2 className=''>Deliver Today</h2>
@@ -216,10 +216,10 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-md-1'>
+                                <div className='col-md-1 mt-2'>
                                     <div className={`${styles.bar} mx-auto`}></div>
                                 </div>
-                                <div className='col-md-6'>
+                                <div className='col-md-6 mt-2'>
                                     <div className='p-5'>
                                         <h4 className=''>Sign up today. Start delivering items.</h4>
                                         <h2 className=''>For Riders and Car Owners</h2>
@@ -238,7 +238,7 @@ export default function Home() {
                 <footer id='contact-section' className={styles.footer_section}>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-md-5'>
+                            <div className='col-md-5 mt-2'>
                                 <div className=''>
                                     <h6 className='mb-3'>About Us</h6>
                                     <p className=''>
@@ -246,7 +246,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='col-md-2'>
+                            <div className='col-md-2 mt-2'>
                                 <div className=''>
                                     <h6 className='mb-3'>Quick Links</h6>
                                     <div className=''>
@@ -268,10 +268,10 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-2'>
+                            <div className='col-md-2 mt-2'>
                                 <div className=''>
                                     <h6 className='mb-3'>Contact Us</h6>
-                                    <div className='d-flex justify-content-between'>
+                                    <div className={`d-flex justify-content-between ${styles.social_media}`}>
                                         <p className='mb-0'>
                                             <Link href='#'>
                                                 <a className=''>
@@ -317,7 +317,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-3'>
+                            <div className='col-md-3 mt-2'>
                                 <div className=''>
                                     <h6 className='mb-3'>Subscribe Newsletter</h6>
                                     <div className='input-group'>

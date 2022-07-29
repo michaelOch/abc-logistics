@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -49,4 +48,9 @@ a:hover {
     background-color: transparent;
     color: var(--theme-secondary);
     border: 2px solid var(--theme-secondary);
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+    border: none;
+    outline: none;
 }
