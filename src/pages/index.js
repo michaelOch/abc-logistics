@@ -11,6 +11,7 @@ import customer4 from '../assets/images/customer-4.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Register from '@/components/register';
 
 export default function Home() {
     return (
@@ -91,12 +92,12 @@ export default function Home() {
                             </div>
                         </div>
                         <div className='d-flex justify-content-center align-items-center'>
-                            <Link href='#'>
-                                <a className='btn btn-lg btn-block btn-primary mt-5'>Order a Delivery</a>
-                            </Link>
+                            <button type='button' className='btn btn-lg btn-block btn-primary mt-5' data-bs-toggle='modal' data-bs-target='#signupForm'>Order a Delivery</button>
                         </div>
                     </div>
                 </section>
+                {/* Register Form */}
+                <Register />
                 {/* Testimonials */}
                 <section className={styles.testimonial_section}>
                     <div className='container'>
