@@ -23,7 +23,7 @@ function Register() {
                                 </div>
                                 <div className='mb-3'>
                                     <select className='form-select'>
-                                        <option selected>What type of vehicle do you have?</option>
+                                        <option defaultValue=''>What type of vehicle do you have?</option>
                                         <option value='1'>Motorcycle</option>
                                         <option value='2'>Bicycle</option>
                                         <option value='3'>Tricycle</option>
