@@ -3,7 +3,7 @@ import React from 'react';
 function Register() {
     return (
         <section className='modal fade' id='signupForm' data-bs-backdrop='static' data-bs-keyboard='false' tabIndex='-1'>
-            <div className='modal-dialog'>
+            <div className='modal-dialog modal-dialog-centered modal-dialog-scrollable'>
                 <div className='modal-content'>
                     <div className='modal-header'>
                         <button type='button' className='btn-close' data-bs-dismiss='modal'></button>
