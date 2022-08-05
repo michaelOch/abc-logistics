@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 function RequestDelivery() {
     return (
@@ -22,7 +24,7 @@ function RequestDelivery() {
                                                 <div className='input-group'>
                                                     <input type='text' className={`form-control`} placeholder='Enter pickup location' />
                                                     <span className={`input-group-text`}>
-                                                            <button type='button' className=''>SEND</button>
+                                                        <FontAwesomeIcon icon={faAngleDoubleRight} className='btn' />
                                                     </span>
                                                 </div>
                                             </div>
@@ -30,7 +32,7 @@ function RequestDelivery() {
                                                 <div className='input-group'>
                                                     <input type='text' className={`form-control`} placeholder='Enter pickup location' />
                                                     <span className={`input-group-text`}>
-                                                            <button type='button' className=''>SEND</button>
+                                                        <FontAwesomeIcon icon={faAngleDoubleRight} className='btn' />
                                                     </span>
                                                 </div>
                                             </div>
